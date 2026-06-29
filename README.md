@@ -10,6 +10,12 @@ und zu Widgets zusammenstellen — **anzeigen und steuern**.
 > sie kommuniziert lediglich über die HTTP-Schnittstelle mit einem Miniserver, den **du selbst besitzt**.
 > Nutzung auf eigene Verantwortung.
 
+## Screenshots
+
+| Widget (Homescreen) | Builder – Sortieren |
+|:---:|:---:|
+| <img src="docs/screenshots/widget.png" width="280" alt="Widget auf dem Homescreen"> | <img src="docs/screenshots/builder-sortieren.png" width="280" alt="Builder: Werte per Drag & Drop sortieren"> |
+
 ## Funktionen
 
 - **Anzeige** beliebiger Loxone-Werte (Temperaturen, Zustände, Verbräuche …) mit Formatierung pro Wert.
