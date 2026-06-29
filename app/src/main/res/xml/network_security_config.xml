@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  v1: Zugriff nur im lokalen Netz auf den Miniserver per HTTP (Cleartext).
+  Die Miniserver-IP ist konfigurierbar, daher kann hier keine feste Domain stehen;
+  Cleartext wird global erlaubt. TODO: Bei Remote-Zugriff (Cloud-DNS/VPN, unsicheres
+  Netz) auf HTTPS / AES-Session umstellen und Cleartext wieder einschraenken.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

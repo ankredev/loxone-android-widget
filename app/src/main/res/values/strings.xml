@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Loxone Widget</string>
+    <string name="widget_description">Zeigt konfigurierbare Loxone-Werte an</string>
+    <string name="config_title">Loxone Widget – Konfiguration</string>
+</resources>
