@@ -12,9 +12,9 @@ und zu Widgets zusammenstellen — **anzeigen und steuern**.
 
 ## Screenshots
 
-| Widget (Homescreen) | Builder – Sortieren |
-|:---:|:---:|
-| <img src="docs/screenshots/widget.png" width="280" alt="Widget auf dem Homescreen"> | <img src="docs/screenshots/builder-sortieren.png" width="280" alt="Builder: Werte per Drag & Drop sortieren"> |
+| Widget (Homescreen) | Builder – Werte auswählen | Builder – Sortieren |
+|:---:|:---:|:---:|
+| <img src="docs/screenshots/widget.png" width="260" alt="Widget auf dem Homescreen"> | <img src="docs/screenshots/builder-auswahl.png" width="260" alt="Builder: Werte auswählen mit Suche, Filter, Anzeigename & Intervall"> | <img src="docs/screenshots/builder-sortieren.png" width="260" alt="Builder: Werte per Drag & Drop sortieren"> |
 
 ## Funktionen
 
