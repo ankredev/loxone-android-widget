@@ -150,6 +150,15 @@ class WidgetBuilderViewModel(app: Application) : AndroidViewModel(app) {
         )
     }
 
+    /** Setzt den im Widget angezeigten Namen (Label) eines ausgewählten Elements. */
+    fun setLabel(value: SelectableValue, label: String) {
+        _state.value = _state.value.copy(
+            selected = _state.value.selected.map {
+                if (it.stateUuid == value.stateUuid) it.copy(label = label) else it
+            },
+        )
+    }
+
     /** Setzt das Abfrage-Intervall (Sekunden) eines ausgewählten Elements. */
     fun setPollSeconds(value: SelectableValue, seconds: Int) {
         _state.value = _state.value.copy(

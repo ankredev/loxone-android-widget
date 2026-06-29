@@ -232,9 +232,11 @@ private fun BuilderScreen(viewModel: WidgetBuilderViewModel, onSave: () -> Unit)
                                     checked = item != null,
                                     switchable = StructureParser.isSwitchable(value),
                                     tapEnabled = item?.tapCommand != null,
+                                    label = item?.label ?: value.displayName,
                                     pollSeconds = item?.pollSeconds ?: 5,
                                     onToggle = { viewModel.toggle(value) },
                                     onTapEnabledChange = { viewModel.setSwitchable(value, it) },
+                                    onLabelChange = { viewModel.setLabel(value, it) },
                                     onPollSecondsChange = { viewModel.setPollSeconds(value, it) },
                                 )
                             }
@@ -257,9 +259,11 @@ private fun ValueListItem(
     checked: Boolean,
     switchable: Boolean,
     tapEnabled: Boolean,
+    label: String,
     pollSeconds: Int,
     onToggle: () -> Unit,
     onTapEnabledChange: (Boolean) -> Unit,
+    onLabelChange: (String) -> Unit,
     onPollSecondsChange: (Int) -> Unit,
 ) {
     Column(modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp)) {
@@ -286,8 +290,21 @@ private fun ValueListItem(
                 }
             }
         }
-        // Pro ausgewähltem Wert: eigenes Abfrage-Intervall (Sekunden).
+        // Pro ausgewähltem Wert: editierbarer Anzeigename + eigenes Abfrage-Intervall.
         if (checked) {
+            var labelText by remember(value.stateUuid) { mutableStateOf(label) }
+            OutlinedTextField(
+                value = labelText,
+                onValueChange = { input ->
+                    labelText = input
+                    onLabelChange(input)
+                },
+                label = { Text("Anzeigename") },
+                singleLine = true,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(start = 48.dp, top = 2.dp),
+            )
             Row(
                 modifier = Modifier.padding(start = 48.dp, top = 2.dp),
                 verticalAlignment = Alignment.CenterVertically,
