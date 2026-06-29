@@ -12,9 +12,13 @@ und zu Widgets zusammenstellen — **anzeigen und steuern**.
 
 ## Screenshots
 
-| Widget (Homescreen) | Builder – Werte auswählen | Builder – Sortieren |
-|:---:|:---:|:---:|
-| <img src="docs/screenshots/widget.png" width="260" alt="Widget auf dem Homescreen"> | <img src="docs/screenshots/builder-auswahl.png" width="260" alt="Builder: Werte auswählen mit Suche, Filter, Anzeigename & Intervall"> | <img src="docs/screenshots/builder-sortieren.png" width="260" alt="Builder: Werte per Drag & Drop sortieren"> |
+| Loxone-Verbindung | Werte auswählen |
+|:---:|:---:|
+| <img src="docs/screenshots/verbindung.png" width="260" alt="Verbindungs-Setup zum Miniserver"> | <img src="docs/screenshots/builder-auswahl.png" width="260" alt="Builder: Werte auswählen mit Suche, Filter, Anzeigename & Intervall"> |
+
+| Sortieren (Drag & Drop) | Widget (Homescreen) |
+|:---:|:---:|
+| <img src="docs/screenshots/builder-sortieren.png" width="260" alt="Builder: Werte per Drag & Drop sortieren"> | <img src="docs/screenshots/widget.png" width="260" alt="Widget auf dem Homescreen"> |
 
 ## Funktionen
 
