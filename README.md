@@ -1,4 +1,4 @@
-# Loxone Widget (Android)
+# Widget für Loxone (Android)
 
 Frei konfigurierbares **Android-Home-Screen-Widget** für [Loxone](https://www.loxone.com)-Werte.
 Über eine Admin-Oberfläche lassen sich beliebige im Miniserver konfigurierte Controls durchsuchen
