@@ -15,3 +15,7 @@ local.properties
 # Private Entwickler-/AI-Session-Notizen (enthalten Setup-/Netzwerkdetails) – nicht veröffentlichen
 /CLAUDE.md
 /.claude/
+
+# Release-Signierung – NIEMALS committen (Keystore + Zugangsdaten)
+/keystore.properties
+/release.keystore
